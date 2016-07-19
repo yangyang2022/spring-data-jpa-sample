@@ -1,6 +1,5 @@
 package com.wondersgroup.springdatajpa.sample.repository;
 
-import com.apple.eawt.AppEvent;
 import com.wondersgroup.springdatajpa.sample.JpaRepositoryFactoryUtils;
 import com.wondersgroup.springdatajpa.sample.entity.User;
 import org.junit.Before;
@@ -8,7 +7,6 @@ import org.junit.Test;
 import org.springframework.data.domain.Page;
 import org.springframework.data.repository.core.support.RepositoryFactorySupport;
 
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
