@@ -26,4 +26,11 @@ class User extends AbstractBaseEntity {
     @ManyToOne(fetch = FetchType.LAZY, optional = false)
     Group group
 
+    @ManyToMany
+    @JoinTable(name = 'sec_user_role',
+            joinColumns = @JoinColumn(name = 'user_id'),
+            inverseJoinColumns = @JoinColumn(name = 'role_id')
+    )
+    Set<Role> roles
+
 }

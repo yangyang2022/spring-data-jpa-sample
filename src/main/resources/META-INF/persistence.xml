@@ -6,6 +6,7 @@
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
         <class>com.wondersgroup.springdatajpa.sample.entity.Group</class>
         <class>com.wondersgroup.springdatajpa.sample.entity.User</class>
+        <class>com.wondersgroup.springdatajpa.sample.entity.Role</class>
         <properties>
             <property name="javax.persistence.jdbc.url" value="jdbc:h2:~/springdatajpa-sample" />
             <property name="javax.persistence.jdbc.user" value="sa"/>

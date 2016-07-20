@@ -1,6 +1,6 @@
 package com.wondersgroup.springdatajpa.sample
 
-import javax.persistence.EntityManagerFactory
+import javax.persistence.EntityManager
 import javax.persistence.Persistence
 
 /**
@@ -8,11 +8,12 @@ import javax.persistence.Persistence
  */
 class JpaUtils {
 
-    static EntityManagerFactory emf = Persistence.createEntityManagerFactory("default");
+    static final EntityManager entityManager
+
+    static {
+        def factory = Persistence.createEntityManagerFactory('default')
+        entityManager = factory.createEntityManager()
+    }
 
     private JpaUtils() {}
-
-    static def getEntityManagerFactory() { emf }
-
-    static def getEntityManager() { emf.createEntityManager() }
 }

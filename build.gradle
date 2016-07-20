@@ -29,7 +29,8 @@ dependencies {
     compile 'org.eclipse.persistence:javax.persistence:2.1.1',
             'org.springframework.data:spring-data-jpa:1.10.2.RELEASE',
             'org.codehaus.groovy:groovy-all:2.4.7',
-            'org.apache.commons:commons-lang3:3.4'
+            'org.apache.commons:commons-lang3:3.4',
+            'ch.qos.logback:logback-classic:1.1.7'
 
     runtime ("org.hibernate:hibernate-entitymanager:$hibernteVersion") {
         exclude module: 'hibernate-jpa-2.1-api'
